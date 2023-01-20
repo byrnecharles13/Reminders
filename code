@@ -1,0 +1,18 @@
+class Reminder {
+  constructor(message, dueDate) {
+    this.message = message;
+    this.dueDate = dueDate;
+  }
+
+  setReminder() {
+    setTimeout(() => {
+      console.log(this.message);
+    }, this.dueDate);
+  }
+}
+
+const reminder1 = new Reminder("Take out the trash", 5000);
+const reminder2 = new Reminder("Buy groceries", 6000);
+
+reminder1.setReminder();
+reminder2.setReminder();
